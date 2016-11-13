@@ -4,24 +4,23 @@
 public class Main {
     public static void main(String[] args){
 
-    Tractor tractor = new Tractor();
-        tractor.tract();
+    PassengerCar passengerCar = new PassengerCar("Forza", "Легковая", "Хечбєк");
+    CityCar cityCar = new CityCar("BMW", "Легковая", "Седан", 5);
+    RallyCar rallyCar = new RallyCar("BMW", "Легковая", "Спортивная", 4.3);
 
-    CityCar cityCar = new CityCar();
+    Tractor tractor = new Tractor("Ford", "Грузовая", 2000);
+        tractor.tract(passengerCar);
 
-    TractorForCity tractorForCity = new TractorForCity();
-        tractorForCity.tract(cityCar);
+    Tractor tractorForCity = new TractorForCity("Man", "Грузовая", 2000, 8);
+        tractorForCity.tract(rallyCar);
 
-    RallyCar rallyCar = new RallyCar();
-
-    TractorForRally tractorForRally = new TractorForRally();
+    TractorForRally tractorForRally = new TractorForRally("Mersedes", "Грузовая",
+            2000, "RedBull");
         tractorForRally.tract(rallyCar);
 
     Paver p = new Paver();
        p.setName("Асфальтоукладчик ");
        p.fly();
        p.rally();
-
-
     }
     }

@@ -8,7 +8,7 @@ public class Tractor extends Truck {
         this.forTypeCars = forTypeCars;
     }
 
-    public void tract(Cars cars){
+    public void tract(Cars cars) throws Exception {
         System.out.println("Тягач перевозит авто");
     }
 }

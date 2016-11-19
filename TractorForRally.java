@@ -9,7 +9,7 @@ public class TractorForRally extends Tractor {
     }
 
     public void tract(Cars cars) throws MyExctptionRally{
-        if (cars instanceof CityCar)
+        if (cars instanceof RallyCar == false)
             throw new MyExctptionRally();
         System.out.println("TractorForRally везет ралийное авто");
     }

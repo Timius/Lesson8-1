@@ -11,8 +11,8 @@ public class TractorForCity extends Tractor {
     }
 
     public void tract(Cars cars) throws MyExceptionCity {
-        if (cars instanceof RallyCar)
-            throw new MyExceptionCity();
+        if (!(cars instanceof CityCar))
+        throw new MyExceptionCity();
         System.out.println("TractorForCity перевозит обычное (city) авто");
     }
 }

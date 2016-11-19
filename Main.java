@@ -21,7 +21,7 @@ public class Main {
     TractorForRally tractorForRally = new TractorForRally("Mersedes", "Грузовая",
             2000, "RedBull");
         try{
-            tractorForRally.tract(rallyCar);}
+            tractorForRally.tract(cityCar);}
         catch (MyExctptionRally e) {
             System.out.println(e);
     }
